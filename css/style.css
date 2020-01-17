@@ -298,7 +298,12 @@ nav{
 	padding: 0 0 20px;
 	line-height: 24px; 
 }
-
+.nav_bar{
+	display: flex;
+    justify-content: space-around;
+	margin-left: 60%;
+	margin-top: 12px;;
+}
 .heading:before{
 	content: "";
 	position: absolute;
@@ -743,9 +748,14 @@ form:hover .form-button button{
 	.droping-text{
 		font-size: 1.5rem;
 	}
-
+	/* .nav_bar{
+		display: none;
+	} */
 	.front-button{
 		padding-top: 30px;
+	}
+	.nav-links{
+		display: flex;
 	}
 
 	.center-div p{
@@ -789,6 +799,7 @@ form:hover .form-button button{
 		transition: all 1s ease-out;
 		z-index: 3;
 		pointer-events: none;
+		/* display: none; */
 	}
 
 	.nav-links.open {
@@ -832,7 +843,7 @@ form:hover .form-button button{
 	}
 
 	.front{
-		height: auto;
+		height: 100vh;
 	}
 
 	.header-section{
@@ -847,6 +858,13 @@ form:hover .form-button button{
 		padding-left: 10px;
 	}
 
+	.text-center{
+		margin-top: 32px;
+	}
+
+	.col-sm-12{
+		margin-bottom: 22px;;
+	}
 
 	.aboutme{
 		width: 100%;

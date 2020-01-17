@@ -22,10 +22,17 @@
 	<div class="front">
 		<!---- Navbar Section Starts ----->
 
+	
 		<nav id="toggleMenu" onclick="toggleMenu()">
 			<div class="navbar">
 				<a class="nav-icon" href="#"><i class="fa fa-align-right" aria-hidden="true"></i></a>
 			</div>
+			<!-- <div class="nav_bar animated slideInDown">
+				<div><a  class="new" href="#Aboutme">About</a></div>
+				<div><a  class="new" href="#Education">Education</a></div>
+				<div><a  class="new" href="#project">Projects</a></div>
+				<div><a  class="new" href="#Contact">Contacts</a></div>
+			</div> -->
 			<ul class="nav-links animated slideInDown">
 				<li><a class="new " href="#Aboutme">About</a></li>
 				<li><a class="new" href="#Education">Education</a></li>
@@ -33,6 +40,8 @@
 				<li><a class="new" href="#Contact">Contacts</a></li>
 			</ul>
 		</nav>
+		
+
 		<!---- Navbar Section Ends ------>
 
 		<section class="header-section" >
@@ -274,7 +283,7 @@
 			<a class="setit wow bounce" href="https://twitter.com/ashutos33794496" target="_blank">
 				<i class="fa fa-twitter" aria-hidden="true"></i>
 			</a>
-			<a class="setit wow bounce" href="https://github.com/ashutosh0699" target="_blank">
+			<a class="setit wow bounce" href="https://github.com/soniashutosh" target="_blank">
 				<i class="fa fa-github" aria-hidden="true"></i>
 			</a>
 			<a class="setit wow bounce" href="https://in.linkedin.com/in/ashutosh-soni-2a40a9174" target="_blank">
@@ -293,7 +302,7 @@
 	<footer class="footersection">
 		<div class="total-footersection">
 			<div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 col-1 footer-div">
-				<p>Copyright ©2k20 ASHUTOSH SONI...<br> All rights reserved....&#x1F609;</p>
+				<p>Copyright ©2k20 ASHUTOSH SONI...<br> All rights reserved....</p>
 			</div>
 		</div>
 
@@ -380,6 +389,18 @@
 	<script type="text/javascript" src="js/jquery.hislide.js" ></script>
   	<script>
 		$('.slide').hiSlide();
+
+
+		$("a[href^='#']").click(function(e) {
+			e.preventDefault();
+			
+			var position = $($(this).attr("href")).offset().top;
+		
+			$("body, html").animate({
+				scrollTop: position
+			} /* speed */ );
+		});
+
 	</script>
 
 
